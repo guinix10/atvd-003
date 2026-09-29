@@ -132,4 +132,38 @@ class TelaCracha extends StatelessWidget {
                 thickness: 1,
               ),
 
-              
+              // 2. Seção Sobre Mim
+              const Align(
+                alignment: Alignment.centerLeft,
+                child: Text(
+                  'Sobre Mim',
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.indigo,
+                  ),
+                ),
+              ),
+
+              const SizedBox(height: 8),
+
+              const Text(
+                'Sou estudante de Desenvolvimento de Sistemas e '
+                'tenho interesse em desenvolvimento de aplicativos '
+                'mobile. Estou aprendendo Flutter e Dart para criar '
+                'interfaces modernas e funcionais.',
+                style: TextStyle(
+                  fontSize: 13,
+                  height: 1.4,
+                ),
+                textAlign: TextAlign.justify,
+              ),
+
+              const SizedBox(height: 16),
+  },
+          ),
+        ),
+      ),
+    );
+  }
+}
