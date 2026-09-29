@@ -37,7 +37,6 @@ class TelaCracha extends StatelessWidget {
         child: Container(
           width: 320,
           padding: const EdgeInsets.all(20.0),
-           // 4. Aplicando fundo gradiente com LinearGradient
           decoration: BoxDecoration(
             gradient: LinearGradient(
               colors: [
