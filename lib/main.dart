@@ -160,7 +160,50 @@ class TelaCracha extends StatelessWidget {
               ),
 
               const SizedBox(height: 16),
-  },
+
+              // 3. Skills utilizando Chips dentro de uma Row
+              const Align(
+                alignment: Alignment.centerLeft,
+                child: Text(
+                  'Habilidades',
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.indigo,
+                  ),
+                ),
+              ),
+
+              const SizedBox(height: 8),
+
+              Wrap(
+                spacing: 6,
+                runSpacing: 6,
+                children: const [
+                  Chip(
+                    label: Text('Dart'),
+                    avatar: Icon(
+                      Icons.code,
+                      size: 18,
+                    ),
+                  ),
+                  Chip(
+                    label: Text('Flutter'),
+                    avatar: Icon(
+                      Icons.phone_android,
+                      size: 18,
+                    ),
+                  ),
+                  Chip(
+                    label: Text('Git'),
+                    avatar: Icon(
+                      Icons.source,
+                      size: 18,
+                    ),
+                  ),
+                ],
+              ),
+            ],
           ),
         ),
       ),
